@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_12_073732) do
+ActiveRecord::Schema.define(version: 2023_02_09_071451) do
 
   create_table "programs", force: :cascade do |t|
     t.string "identifier"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2022_02_12_073732) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "program_id", null: false
+    t.string "description"
     t.index ["program_id"], name: "index_progresses_on_program_id"
   end
 

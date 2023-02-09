@@ -34,7 +34,7 @@ class ProgressesController < ApplicationController
 
   private
   def progress_params
-    params.require(:progress).permit(:begun_at, :ended_at, :status, :creator, :rate)
+    params.require(:progress).permit(:begun_at, :ended_at, :status, :creator, :rate, :description)
   end
 
   def update_progress_params
